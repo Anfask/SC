@@ -1,0 +1,119 @@
+.dest-main {
+    padding: 40px 0;
+    background-color: transparent;
+}
+
+.dest-header {
+    text-align: left;
+    margin-bottom: 60px;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.dest-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.dest-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Grid layout for countries */
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin: 0 40px;
+}
+
+/* Country box styling */
+.country-box {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.country-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Country image styling */
+.country-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Country info styling */
+.country-info {
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Align flag and name vertically */
+    justify-content: space-between; /* Space them apart if needed */
+}
+
+.country-flag {
+    font-size: 3.5em;
+    margin-right: 15px;
+}
+
+.country-name {
+    font-size: 1.2em;
+    color: #333;
+    margin-left: 10px; /* Adds space between flag and name */
+    white-space: nowrap; /* Prevents name from wrapping to a new line */
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 600;
+}
+
+.explore-btn {
+    transition: color 0.3s;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid #1F2937; 
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn i {
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.explore-btn:hover {
+    color: #05d833;
+}
+
+.fa-arrow-right {
+    color: #05d833;
+}
+
+.explore-btn:hover i {
+    transform: translateX(5px); /* Animate the icon on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .countries-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 countries per row on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .countries-grid {
+        grid-template-columns: 1fr; /* 1 country per row on mobile */
+    }
+}

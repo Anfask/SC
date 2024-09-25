@@ -1,0 +1,82 @@
+.serv-main {
+    padding: 50px 20px;
+    background-color: transparent; 
+
+.serv-header {
+    text-align: left;
+    margin-bottom: 60px;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.serv-header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.serv-header p {
+    font-size: 1.2em;
+    color: #6B7280;
+}
+
+/* Service Container */
+.serv-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Space between boxes */
+}
+
+.serv-box {
+    padding: 60px; /* Increased padding for larger boxes */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for a card-like look */
+    transition: transform 0.3s ease;
+}
+
+.serv-box h2 {
+    font-size: 2em; /* Larger font for titles */
+    margin-bottom: 20px;
+    color: #1F2937; /* Darker text */
+}
+
+.serv-box p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #374151;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.serv-box button {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid #1F2937; 
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.serv-box button:hover {
+    background-color: #1F2937;
+    color: #ffffff;
+}
+
+.serv-box:hover {
+    transform: translateY(-8px); /* Subtle hover effect */
+}
+
+.yellow-box { background-color: #fde391; }
+.purple-box { background-color: #b7a3f4; }
+.pink-box { background-color: #fbbbdf; }
+.light-pink-box { background-color: #caed91; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .serv-container {
+        grid-template-columns: 1fr; 
+
+    .serv-box {
+        padding: 40px;
+    }
+}
